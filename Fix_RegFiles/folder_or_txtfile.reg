@@ -1,0 +1,69 @@
+Windows Registry Editor Version 5.00
+
+; Created by: Shawn Brink
+; Created on: September 28th 2015
+; Updated on: June 18, 2022
+; Tutorial: https://www.tenforums.com/tutorials/24412-add-remove-default-new-context-menu-items-windows-10-a.html
+
+
+; Library
+[-HKEY_CLASSES_ROOT\.library-ms\ShellNew]
+[HKEY_CLASSES_ROOT\.library-ms\ShellNew]
+"Handler"="{c7ca6167-2f46-4c4c-98b2-c92591368971}"
+"IconPath"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,69,\
+  00,6d,00,61,00,67,00,65,00,72,00,65,00,73,00,2e,00,64,00,6c,00,6c,00,2c,00,\
+  2d,00,31,00,30,00,30,00,31,00,00,00
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.library-ms\ShellNew\Config]
+"IsFolder"=""
+"IsOptIn"=""
+"NoEmptyFile"=""
+
+
+; Folder
+[-HKEY_CLASSES_ROOT\Folder\ShellNew]
+[HKEY_CLASSES_ROOT\Folder\ShellNew]
+"Directory"=""
+"IconPath"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,\
+  00,68,00,65,00,6c,00,6c,00,33,00,32,00,2e,00,64,00,6c,00,6c,00,2c,00,33,00,\
+  00,00
+"ItemName"="@shell32.dll,-30396"
+"MenuText"="@shell32.dll,-30317"
+"NonLFNFileSpec"="@shell32.dll,-30319"
+
+[HKEY_CLASSES_ROOT\Folder\ShellNew\Config]
+"AllDrives"=""
+"IsFolder"=""
+"NoExtension"=""
+
+[HKEY_CLASSES_ROOT\Notepad++.txt]
+@="my_txt_file"
+
+[HKEY_CLASSES_ROOT\Notepad++.txt\DefaultIcon]
+@="\"C:\\Users\\Admin\\Desktop\\notepad++.ico\""
+
+[HKEY_CLASSES_ROOT\Notepad++.txt\shell]
+
+[HKEY_CLASSES_ROOT\Notepad++.txt\shell\open]
+
+[HKEY_CLASSES_ROOT\Notepad++.txt\shell\open\command]
+@="\"D:\\notepad++\\notepad++.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\.txt]
+"Content Type"="text/plain"
+"PerceivedType"="text"
+@="Notepad++.txt"
+
+[HKEY_CLASSES_ROOT\.txt\PersistentHandler]
+@="{5e941d80-bf96-11cd-b579-08002b30bfeb}"
+
+[HKEY_CLASSES_ROOT\.txt\ShellNew]
+"ItemName"=hex(2):40,00,43,00,3a,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,\
+  73,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6e,00,6f,\
+  00,74,00,65,00,70,00,61,00,64,00,2e,00,65,00,78,00,65,00,2c,00,2d,00,34,00,\
+  37,00,30,00,00,00
+"NullFile"=""
